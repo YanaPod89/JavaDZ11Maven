@@ -7,7 +7,7 @@ public class AfishaTest {
     String film3 = "Отель Белград";
     String film4 = "Джентельмены";
     String film5 = "Человек Неведимка";
-    String film6 = "Тролли";
+    String film6 = "Тролли в лесу";
     String film7 = "Номер один";
 
     @Test
