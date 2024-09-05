@@ -37,12 +37,43 @@ public class AfishaTest {
     @Test
     public void shouldFindLast() {
 
-        Afisha star = new Afisha(6);
+        Afisha star = new Afisha();
         star.addFilm(film1);
         star.addFilm(film2);
         star.addFilm(film3);
+        star.addFilm(film4);
+        star.addFilm(film5);
         String[] actual = star.findLast();
-        String[] expected = {film3, film2, film1};
+        String[] expected = {film5, film4, film3, film2, film1};
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldFindLastLess() {
+
+        Afisha star = new Afisha(4);
+        star.addFilm(film1);
+        star.addFilm(film2);
+        star.addFilm(film3);
+        star.addFilm(film4);
+        String[] actual = star.findLast();
+        String[] expected = {film4, film3, film2, film1};
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldFindLastOver() {
+
+        Afisha star = new Afisha(7);
+        star.addFilm(film1);
+        star.addFilm(film2);
+        star.addFilm(film3);
+        star.addFilm(film4);
+        star.addFilm(film5);
+        star.addFilm(film6);
+        star.addFilm(film7);
+        String[] actual = star.findLast();
+        String[] expected = {film7, film6, film5, film4, film3, film2, film1};
         Assertions.assertArrayEquals(expected, actual);
     }
 
