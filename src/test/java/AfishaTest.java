@@ -104,7 +104,7 @@ public class AfishaTest {
         star.addFilm(film6);
         star.addFilm(film7);
         String[] actual = star.findLast();
-        String[] expected = {film5, film4, film3, film2, film1};
+        String[] expected = {film7, film6, film5, film4, film3};
         Assertions.assertArrayEquals(expected, actual);
     }
 }

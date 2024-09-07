@@ -36,7 +36,7 @@ public class Afisha {
 
         String[] tmp = new String[resultLength];
         for (int i = 0; i < tmp.length; i++) {
-            tmp[i] = film[tmp.length - 1 - i];
+            tmp[i] = film[film.length - 1 - i];
         }
         return tmp;
 
